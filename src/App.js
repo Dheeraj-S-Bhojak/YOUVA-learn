@@ -4,10 +4,13 @@ import NavBar from "./components/navbar/navBar.component.tsx";
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
-      <BannerForm />
-    </div>
+    <main>
+      <Routes>
+        <Route path='/' element={<NavBar />}>
+          <Route index element={<Banner />} />
+        </Route>
+      </Routes>
+    </main>
   );
 };
 
