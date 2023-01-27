@@ -3,7 +3,14 @@ import React from "react";
 const Banner: React.FC = () => {
   return (
     <>
-      <h1>hello i am Banner</h1>
+      <div className='w-full h-screen flex flex-col justify-between'>
+        <div className='grid md:grid-col-2 max-w-[1240px] m-auto'>
+          <div>
+            <p>hello</p>
+            <h1>Dheeraj</h1>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
