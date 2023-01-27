@@ -1,6 +1,6 @@
 import React from "react";
 
-const BannerForm = () => {
+const BannerForm: React.FC = () => {
   return (
     <div className='min-h-screen bg-gray-60 flex flex-col '>
       <div className='max-w-md w-full mx-auto mt-4 bg-white p-8 border rounded-md border-gray-300'>
