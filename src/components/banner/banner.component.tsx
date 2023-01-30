@@ -1,5 +1,4 @@
 import React from "react";
-import bannerImage from "../../images/banner.jpg";
 
 const Banner: React.FC = () => {
   return (

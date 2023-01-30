@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import Banner from "./components/banner/banner.component.tsx";
 import Footer from "./components/footer/footer.component.tsx";
 import NavBar from "./components/navbar/navBar.component.tsx";
-import Banner from "./components/banner/banner.component.tsx";
 
 const App = () => {
   return (
