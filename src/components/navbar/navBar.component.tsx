@@ -2,13 +2,14 @@ import React from "react";
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", href: "#", current: true },
-  { name: "Course", href: "#", current: false },
-  { name: "About-us", href: "#", current: false },
-  { name: "Contact-Us", href: "#", current: false },
-  { name: "Career", href: "#", current: false },
+  { name: "Home", to: "/banner", current: true },
+  { name: "Course", to: "/aa", current: false },
+  { name: "About-us", to: "#", current: false },
+  { name: "Contact-Us", to: "#", current: false },
+  { name: "Career", to: "#", current: false },
 ];
 
 function classNames(...classes) {
@@ -37,22 +38,23 @@ const NavBar: React.FC = () => {
                 <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
                   <div className='flex flex-shrink-0 items-center'>
                     <img
-                      className='block h-16 w-auto lg:hidden'
+                      className='block h-16 w-auto md:hidden'
                       src='https://i.ibb.co/1THBdd3/youva-removebg-preview.png'
                       alt='Youva logo'
                     />
+
                     <img
-                      className='hidden h-8 w-auto lg:block'
+                      className='hidden h-8 w-auto md:block'
                       src='https://i.ibb.co/1THBdd3/youva-removebg-preview.png'
                       alt='Youva logo'
                     />
                   </div>
-                  <div className='hidden sm:ml-6 sm:block'>
+                  <div className='hidden sm:ml-6 md:block'>
                     <div className='flex space-x-4'>
                       {navigation.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
-                          href={item.href}
+                          to={item.to}
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
@@ -61,7 +63,7 @@ const NavBar: React.FC = () => {
                           )}
                           aria-current={item.current ? "page" : undefined}>
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -74,7 +76,7 @@ const NavBar: React.FC = () => {
                         <span className='sr-only'>Open user menu</span>
                         <img
                           className='h-8 w-8 rounded-full'
-                          src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80'
+                          src='https://i.ibb.co/mCTkYZw/user-Profile.png'
                           alt=''
                         />
                       </Menu.Button>
@@ -137,7 +139,7 @@ const NavBar: React.FC = () => {
                   <Disclosure.Button
                     key={item.name}
                     as='a'
-                    href={item.href}
+                    href={item.to}
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
