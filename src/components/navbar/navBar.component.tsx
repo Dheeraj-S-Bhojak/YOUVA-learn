@@ -5,11 +5,11 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
 const navigation = [
-  { name: "Home", to: "/banner", current: true },
-  { name: "Course", to: "/aa", current: false },
-  { name: "About-us", to: "#", current: false },
-  { name: "Contact-Us", to: "#", current: false },
-  { name: "Career", to: "#", current: false },
+  { name: "Home", to: "/", current: true },
+  { name: "Course", to: "/course", current: false },
+  { name: "About-us", to: "about-us", current: false },
+  { name: "Contact-Us", to: "/contact-us", current: false },
+  { name: "Career", to: "career", current: false },
 ];
 
 function classNames(...classes) {
@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
           <>
             <div className='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
               <div className='relative flex h-16 items-center justify-between'>
-                <div className='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+                <div className='absolute inset-y-0 left-0 flex items-center md:hidden'>
                   {/* Mobile menu button*/}
                   <Disclosure.Button className='inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'>
                     <span className='sr-only'>Open main menu</span>
@@ -35,7 +35,7 @@ const NavBar: React.FC = () => {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className='flex flex-1 items-center justify-center sm:items-stretch sm:justify-start'>
+                <div className='flex flex-1 items-center justify-center sm:items-stretch md:justify-start'>
                   <div className='flex flex-shrink-0 items-center'>
                     <img
                       className='block h-16 w-auto md:hidden'
