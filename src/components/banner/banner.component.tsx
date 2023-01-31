@@ -1,4 +1,5 @@
 import React from "react";
+import BannerForm from "../banner-form/banner-form.tsx";
 
 const Banner: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const Banner: React.FC = () => {
             <p className="text-2xl">Lorem ipsum dolor sit..</p>
             <button className="py-3 px-6 sm:w-[60%] my-4">Get Started</button>
           </div>
-          <div>{/**import banner form here */}</div>
+          <div>{<BannerForm />}</div>
         </div>
       </div>
     </>
