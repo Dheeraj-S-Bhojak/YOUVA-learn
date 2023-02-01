@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Banner from "./components/banner/banner.component.tsx";
-import Footer from "./components/footer/footer.component.tsx";
-import NavBar from "./components/navbar/navBar.component.tsx";
+import Banner from "./components/banner/banner.component";
+import Footer from "./components/footer/footer.component";
+import NavBar from "./components/navbar/navBar.component";
 
 const App = () => {
   return (
