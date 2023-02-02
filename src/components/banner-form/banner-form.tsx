@@ -1,4 +1,5 @@
 import React from "react";
+import "./banner-form.styles.css";
 
 const BannerForm: React.FC = () => {
   return (
@@ -55,7 +56,7 @@ const BannerForm: React.FC = () => {
                 Phone Number
               </label>
             </div>
-            <button className="bg-blue-500 hover:bg-green-700 text-white font-bold py-2 mt-6 px-4 rounded">
+            <button className=" font-bold py-2 mt-6 px-4 rounded ">
               Submit
             </button>
           </div>
