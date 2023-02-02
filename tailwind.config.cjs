@@ -1,14 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
-  compilerOptions: {
-    include: [
-      "src",
-      "src/declaration.d.td",
-      "node_modules/@types",
-      "src/types",
-    ],
-  },
+  compilerOptions: {},
   theme: {
     screens: {
       sm: "640px",
