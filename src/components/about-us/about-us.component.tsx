@@ -1,7 +1,8 @@
 import React from "react";
 import mountains from "../../images/mountains.jpg";
+import "./about-us.styles.css";
 
-const Testimonials: React.FC = () => {
+const AboutUs: React.FC = () => {
   return (
     <div>
       <div className="lg:max-w-full w-full relative inset-0 md:max-w-[744px] max-w-[375px] mx-auto bg-white   ">
@@ -9,15 +10,18 @@ const Testimonials: React.FC = () => {
           <img
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%20158.png"
             className="w-full object-cover lg:h-[330px] lg:block md:hidden hidden"
+            alt="about-banner "
           />
           <div className="w-full h-full bg-black opacity-50 absolute top-0 left-0"></div>
           <img
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/sofa.png"
             className="lg:hidden md:block hidden"
+            alt="about-banner"
           />
           <img
             src="https://tuk-cdn.s3.amazonaws.com/can-uploader/image%20159.png"
             className="lg:hidden md:hidden block"
+            alt="about-banner"
           />
           <div className="absolute lg:bottom-8 md:bottom-3 bottom-0 lg:px-7 md:px-10 px-4 py-4">
             <p className="lg:text-4xl md:text-2xl text-2xl py-7 font-semibold leading-9 text-white">
@@ -111,6 +115,7 @@ const Testimonials: React.FC = () => {
                   <img
                     className="inset-0 h-full w-full object-cover object-center"
                     src={mountains}
+                    alt="ProjectImage"
                   />
                 </div>
 
@@ -140,6 +145,7 @@ const Testimonials: React.FC = () => {
                   <img
                     className="inset-0 h-full w-full object-cover object-center"
                     src={mountains}
+                    alt="ProjectImage"
                   />
                 </div>
 
@@ -169,6 +175,7 @@ const Testimonials: React.FC = () => {
                   <img
                     className="inset-0 h-full w-full object-cover object-center"
                     src={mountains}
+                    alt="ProjectImage"
                   />
                 </div>
 
@@ -191,8 +198,28 @@ const Testimonials: React.FC = () => {
           </div>
         </div>
       </div>
+
+      <div className="    shadow-2xl rounded-2xl items-center ">
+        <div className=" bg-gray-800 rounded text-center ">
+          <h1 className="text-5xl text-white pt-9 ">Lorem ipsum</h1>
+          <p className=" px-28 pb-32 pt-16 text-xl text-white ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro iure
+            temporibus fuga voluptatum ut blanditiis, quisquam ea ducimus nisi
+            dolore quaerat recusandae odit debitis nobis officia voluptas animi
+            veniam obcaecati, saepe ipsum nihil cupiditate rem optio non.
+            Corporis dolores numquam necessitatibus dolorum fuga distinctio
+            fugit? Explicabo, animi deleniti. Mollitia amet laudantium quos
+            doloribus ea ex libero illum quia, pariatur, ipsa fuga natus earum
+            quo harum tempora! Quidem, voluptatem asperiores corrupti sit
+            repellendus laboriosam facilis neque, rerum illo explicabo
+            blanditiis mollitia? Voluptatibus, blanditiis? Nesciunt accusantium
+            beatae sequi labore quisquam, minima quae atque animi laborum
+            voluptates iste at ut voluptatibus provident est!
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Testimonials;
+export default AboutUs;

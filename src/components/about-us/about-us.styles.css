@@ -1,0 +1,7 @@
+.gradientDiv {
+  background: linear-gradient(16deg, rgb(15, 23, 42) 50%, rgb(255 255 255) 50%);
+}
+
+.gradientP {
+  color: linear-gradient(16deg, rgb(15, 23, 42) (50%, rgb(255 255 255) 50%));
+}
