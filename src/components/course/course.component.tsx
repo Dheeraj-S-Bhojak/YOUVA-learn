@@ -1,5 +1,9 @@
 import React from "react";
+import RotatingBox from "../rotating-box/rotating-box.component";
 import "./course.styles.css";
+import javascript from "../../images/javascript.png";
+import python from "../../images/python.png";
+import typescript from "../../images/typescript.png";
 
 const Course: React.FC = () => {
   return (
@@ -13,29 +17,32 @@ const Course: React.FC = () => {
             itaque ullam veritatis enim non fuga neque culpa nemo quia vero ut
           </p>
           <br />
-          <p>
-            <span className="hello">
-              {" "}
-              <img
-                src="https://www.shareicon.net/download/2016/08/13/808555_media.svg"
-                className="h-10 flex-auto"
-              ></img>
-            </span>
-            JavaScript, for all you Front-End Developers
-          </p>
+          <span className="icon-small flex gap-6 py-5">
+            <img
+              src={javascript}
+              alt="javascript-logo"
+              className="h-10 w-10"
+            ></img>
+            <h4 className="py-2">
+              JavaScript, for all you Front-End Developers
+            </h4>
+          </span>
+          <span className="icon-small flex gap-6 py-5">
+            <img
+              src={typescript}
+              alt="javascript-logo"
+              className="h-10 w-10"
+            ></img>
+            <h4 className="py-2">TypeScript, for all you Edgy JavaScripters</h4>
+          </span>
+          <span className="icon-small flex gap-6 py-5">
+            <img src={python} alt="javascript-logo" className="h-10 w-10"></img>
+            <h4 className="py-2">Python, for all you Data Scientists</h4>
+          </span>
         </div>
-        <div>
-          <div id="wrapper">
-            <div className="box-area">
-              <div id="box-front" className="box"></div>
-              <div id="box-right" className="box"></div>
-              <div id="box-back" className="box"></div>
-              <div id="box-left" className="box"></div>
-              <div id="box-top" className="box"></div>
-              <div id="box-bottom" className="box"></div>
-            </div>
-          </div>
-        </div>
+      </div>
+      <div>
+        <RotatingBox />
       </div>
     </div>
   );
